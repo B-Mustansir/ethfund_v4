@@ -1,1 +1,6 @@
 Django
+psycopg2-binary
+django-allauth
+scikit-learn
+Pillow
+gunicorn
