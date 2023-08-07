@@ -120,7 +120,7 @@ def details(request,id):
             'wallet_address' : projects.wallet_addr,
              'projects' : projects,
         }
-        return render(request,"html/details.html",context)
+        return render(request,"html/single-project.html",context)
 
 def check_user_exists(request):
     email = request.GET.get('usern')

@@ -272,9 +272,9 @@
                         <div class="explore-projects-content">
                             <div class="item d-flex align-items-center">
                                 <span>Design</span>
-                                <p><i class="fa fa-clock-o"></i> 20 Days Left</p>
+                                <p><i class="fa fa-clock-o"></i> {{ i.deadline }} Days</p>
                             </div>
-                            <a href="{% url 'single-project' %}"><h3 class="title">{{ i.projectname }}</h3></a>
+                            <a href="details/{{i.id}}"><h3 class="title">{{ i.projectname }}</h3></a>
                             <div class="projects-range">
                                 <div class="projects-range-content">
                                     <ul>
@@ -285,7 +285,7 @@
                                 </div>
                             </div>
                             <div class="projects-goal">
-                                <span>Goal: <span>3600.00 USD</span></span>
+                                <span>Goal: <span>{{i.goal}} Gwei</span></span>
                             </div>
                         </div>
                     </div>

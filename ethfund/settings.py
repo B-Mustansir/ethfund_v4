@@ -138,6 +138,7 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = '/templates/html/'
+# Isko comment marna nai to api gand marwana 
 # STATICFILES_DIRS=(os.path.join(BASE_DIR,'templates/html'),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
